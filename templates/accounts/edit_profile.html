@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Edit Profile</h1>
+  <form method="post">{% csrf_token %}
+    <p>First name: <input type="text" name="first_name" value="{{ user.first_name }}"></p>
+    <p>Last name: <input type="text" name="last_name" value="{{ user.last_name }}"></p>
+    <p>Email: <input type="email" name="email" value="{{ user.email }}"></p>
+    <button type="submit">Save</button>
+  </form>
+{% endblock %}
