@@ -1,2 +1,8 @@
 Django>=4.2
 psycopg2-binary
+gunicorn>=21.0
+python-decouple>=3.8
+black>=23.0
+flake8>=6.0
+isort>=5.12
+bandit>=1.7
